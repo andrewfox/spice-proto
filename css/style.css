@@ -96,7 +96,6 @@ h2{
 	line-height: 120%;
 }
 
-
 /* ==============
     MOBILE: Menu
    ============== */
@@ -143,7 +142,7 @@ li.lang-welsh {
 }
 
 
-ul.menu li {
+ul.hide li {
 	display: none;
 }
 ul.menu li.menu-link {
@@ -178,8 +177,6 @@ ul.menu li.menu-link {
 	margin-top: 9px;
 	margin-right: 10px;
 }
-
-
 
 h4#short-dec{
 	color: #ccc;
@@ -244,9 +241,6 @@ li.middle-margin {
 	float: left;
 }
 
-
-
-
 #map {
 	width: 100%;
 	height: 140px;
@@ -269,12 +263,10 @@ h3.notify.offering {
 	margin: 0 5px 0 30px;
 }
 
-
 li.offering {
 		background: url(../img/plus.png) no-repeat 5px 3px;
 	
 }
-
 
 #map-side{
 	width: 100%;
@@ -370,6 +362,35 @@ aside{
 	font-size: 11px;
 }
 
+
+
+/*Hub stats*/
+/*
+.expanded {
+	display: block;
+}*/
+
+.hub-stats {
+	padding: 3px;
+	background-color: silver;
+	margin-bottom: 4px;
+}
+
+.hub-stats li {
+	width: 25%;
+	float: left;
+}
+
+.hub-stats h1 {
+	margin: 2px;
+	padding: 0;
+	color: white;
+}
+.hub-stats p {
+	font-size: 11px;
+}
+
+
 /*VIDEO*/
 ul.video {
 	width: 100%;
@@ -416,11 +437,6 @@ footer {
 #full-width-image img {
 	width: 100%;
 }
-
-
-
-
-
 
 #articles-full article header img {
 	width: 100%;
@@ -487,57 +503,6 @@ li{
 ul{
 	margin: 0;
 	padding: 0;
-}
-
-
-/*MOBILE NAV*/
-
-
-#S {
-	
-}
-
-#m_offerings {
-}
-
-
-
-#e_offerings {
-	display: none;
-}
-
-.expanded {
-	display: block;
-}
-
-
-
-
-#m_notifications {
-}
-
-
-#m_credits {
-}
-
-.hub-stats {
-	padding: 3px;
-	background-color: silver;
-	margin-bottom: 4px;
-}
-
-.hub-stats li {
-	width: 25%;
-	float: left;
-}
-
-.hub-stats h1 {
-	margin: 2px;
-	padding: 0;
-	color: white;
-}
-.hub-stats p {
-	font-size: 11px;
 }
 
 
