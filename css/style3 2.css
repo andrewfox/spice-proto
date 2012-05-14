@@ -3,13 +3,9 @@
    ==================== */
    
 article {
-	width: 30.5555556%; /*220/720*/
-	padding-right: 1.38888889%; /*10/720*/
-	padding-left: 1.38888889%; /*10/720*/
-}
-
-#articles-title {
-	margin-left: 1.38888889%; /*10/720*/;
+	width: 30.6666667%;
+	padding-right: 1.33333333%;
+	padding-left: 1.33333333%;
 }
 
 #articles-full article {
@@ -42,13 +38,6 @@ h3.more-spacer{
 	margin: -5em 1% 1% 0;
 	float: right;
 }
-
-aside{
-	width: 22.9166667%; /*220/960px*/
-	padding-right: 1.04166667%; /*10/960px*/
-	padding-left: 1.04166667%;
-}
-
 aside #join-us {
 	-moz-border-radius: 0;
 	border-radius: 0px;
@@ -75,8 +64,7 @@ aside #join-us {
      }
      
      #articles {
-     	margin-right: 0;
-     	margin-left: 25%; /*240/960px gives a main of 740*/
+     	margin-right: -0.333333332%;
      }
      
 /*VIDEO*/
