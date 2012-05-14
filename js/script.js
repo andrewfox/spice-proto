@@ -1,22 +1,9 @@
 /* Author: LiveWork */
+alert("Hello! I am an alert box!!");
 
-$(document).ready(function(){
-
-var menu=false;
-
+$(document).ready(function() {
 $("a#menu").click(function () {
-	if (menu==false) {
-		$('ul.menu').appendTo('nav.primary');
-		$('ul.menu').removeClass('hide');
-		menu=true;
-	}
-	else {
-		$('ul.menu').prependTo('nav.primary');
-		$('ul.home').prependTo('nav.primary');
-		$('ul.menu').addClass('hide');
-		menu=false;
-	}
+	$('ul.menu').removeClass('hide');
 });
 
-
- });
+}
