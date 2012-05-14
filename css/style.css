@@ -149,6 +149,13 @@ ul.menu li.menu-link {
 	display: inline;
 }
 
+#header-global li h5 {
+	display: inline;
+	background-color: red;
+	color: white;
+	padding: 2px;
+}
+
 ul.menu.cloned {
 	clear: both;
 	display: block;
