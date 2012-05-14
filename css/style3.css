@@ -7,7 +7,13 @@ article {
 	padding-right: 1.33333333%;
 	padding-left: 1.33333333%;
 }
-   
+
+#articles-full article {
+	width: 22.9166667%;
+	padding-right: 1.04166667%;
+	padding-left: 1.04166667%;
+}
+
 h3.more-spacer{
    	clear: both;
    	width: 100%;

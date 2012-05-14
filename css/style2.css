@@ -151,6 +151,12 @@ article {
 	float: left;
 }
 
+#articles-full article {
+	width: 30.6666667%;
+	padding-right: 1.33333333%;
+	padding-left: 1.33333333%;
+}
+
 #articles-full {
 	clear: both;
 	
