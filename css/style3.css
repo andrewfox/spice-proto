@@ -1,0 +1,69 @@
+/* ====================
+    WIDE
+   ==================== */
+   
+article {
+	width: 30.6666667%;
+	padding-right: 1.33333333%;
+	padding-left: 1.33333333%;
+}
+   
+h3.more-spacer{
+   	clear: both;
+   	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #F1F1EF;
+	height: 1px;
+}
+
+#header-local {
+	padding-left: 2%;
+}
+   
+   #local-title {
+   	width: 73%;
+   }
+   
+#join-us {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 0 5px 5px;
+	margin: -5em 1% 1% 0;
+	float: right;
+}
+aside #join-us {
+	-moz-border-radius: 0;
+	border-radius: 0px;
+	margin: 0;
+	float: none;
+}
+ 
+ 
+   #hubintro{
+   }
+   
+   #main {
+      	padding-right: 10px;
+      	padding-left: 10px;
+      }
+ 
+
+
+     
+     
+     #articles-full {
+     	margin-right: -0.666666664%;
+     	margin-left: -0.333333332%;
+     }
+     
+     #articles {
+     	margin-right: -0.333333332%;
+     }
+     
+/*VIDEO*/
+
+ul.video iframe {
+	width: 70%;
+	height: 350px;
+}

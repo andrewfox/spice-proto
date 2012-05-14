@@ -1,0 +1,306 @@
+/* ====================
+       INTERMEDIATE
+      ==================== */
+   /* ==============
+       DESKTOP: Menu
+      ============== */
+      
+
+
+
+ul.menu li {
+	display: inline;
+}
+ul.menu li.menu-link {
+	display: none;
+}
+
+      
+   /*MAIN*/   
+      
+   #supercontainer {
+   	max-width: 1200px;
+   	margin-right: auto;
+   	margin-left: auto;
+   }
+   
+   
+   #header-global {
+   	width: 100%;
+   }
+   
+
+   
+   
+   
+   nav a:hover, nav a:visited{
+   	color:white;
+   }
+
+   
+   /* ==============
+       DESKTOP: Header
+      ============== */
+   
+   #header-local {
+   }
+   
+   #local-title, #join-us {
+   	padding: 1%;
+   }
+   /*.searchcontainer {
+   	margin-top: 8px;
+   }*/
+   
+   /*joinbox*/
+   
+   
+   
+   #hubintro {
+   	clear: both;
+   }
+   
+   h3.join{
+   	margin-bottom: 3px;
+   	margin-top: 4px;
+   }
+   
+   
+   
+   h3.no-of-credits {
+   	font-size: 50px;
+   	margin: 30px 0 20px;
+   	text-align: right;
+   }
+   
+   #credit-balance p {
+   	text-align: right;
+   }
+   
+   
+   
+   /*join earn spend*/
+   
+   #hubintro{
+}
+
+#hubintro ul li {
+	margin-bottom: 9px;
+}
+
+
+
+/*aside*/
+   #join-us-aside {
+   	margin-top: 10px;
+   	background-color: silver;
+   	padding: 1px 5px 5px;
+	   clear: both;
+	   display: block;
+	   float: left;
+   }
+   
+   #main {
+
+   }
+   
+   
+   
+.after-main-col {
+	width: 48%;
+	float: left;
+}
+
+#about {
+	padding-right: 4%;
+}
+
+#articles-title {
+	float: left;
+	width: 98%;
+}
+
+#articles h2 {
+/*	padding-left: 9px;*/
+	margin-top: 0;
+}
+
+#map {
+	height: 220px;
+}
+   
+#map-side{
+	width: 200px;
+	height: 240px;
+	float: left;
+}
+
+#articles{
+	margin-left: 210px;
+	margin-top: 10px;
+}
+
+
+article {
+	display: block;
+	width: 46%;
+	padding-right: 2%;
+	padding-left: 2%;
+	float: left;
+}
+
+#articles-full {
+	clear: both;
+	
+}
+aside{
+	float: left;
+	width: 190px;
+	margin-top: 10px;
+}
+
+.hub-stats li {
+	width: 50%;
+}
+
+
+/* ==============
+   DESKTOP: Earn Header
+  ============== */
+
+
+.content-left{
+}
+
+#activity{
+	float: left;
+	width: 600px;
+}
+  
+  
+#activity-pic{
+	width: 600px;
+	height: 350px;
+}
+.earn-time {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.earn-time li{
+	width: 285px;
+	background-color: silver;
+	padding: 5px;
+	text-align: left;
+	margin: 0 10px 0 0;
+	overflow: visible;
+	float: left;
+}
+.earn-time li:last-child {
+	margin-right: 0;
+}
+
+ul.details {
+	list-style: none;
+	margin: 0;
+	padding: 10px 0 0;
+}
+
+.p1{
+	float: right;
+	margin-top: 9px;
+}   
+
+#content-right{
+	width: 350px;
+	float: left;
+	margin-left: 10px;
+}
+
+#map-square{
+	float: left;
+	width: 350px;
+	height: 350px;
+	background-color: silver;
+}
+
+#bus-intro{
+	margin-left: 210px;
+}
+
+#share {
+	float: left;
+	width: 180px;
+	margin-bottom: 10px;
+}
+
+#link-to-business {
+	margin-left: 210px;
+}
+
+#sec-title{
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+#main #hubintro.bottom {
+	width: 100%;
+	clear: both;
+	padding-top: 10px;
+}
+
+
+
+h3.timein{
+	background-image: url(img/timein.png);
+}
+
+#second-row{
+	clear: both;
+	padding-top: 10px;
+}
+
+/*VIDEO*/
+
+ul.video iframe {
+	width: 70%;
+	height: 280px;
+}
+
+#bus-video-intro{
+	overflow: hidden;
+	margin-left: -10px;
+}
+
+
+#video-intro{
+	background-color: silver;
+	width: 1540px;
+	margin-left: -270px;
+}
+
+#about-slider{
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#col-1, #col-2, #col-3{
+	width: 30.6666667%;
+	padding-right: 1.33333333%;
+	padding-left: 1.33333333%;
+	float: left;
+}
+
+#contact-us-box{
+	width: 330px;
+	background-color: silver;
+	height: 300px;
+	padding: 5px;
+}
+
+#hub-list{
+	margin-left: 210px;
+}
+
