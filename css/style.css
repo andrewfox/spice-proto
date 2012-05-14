@@ -149,6 +149,13 @@ ul.menu li.menu-link {
 	display: inline;
 }
 
+ul.menu.cloned {
+	clear: both;
+	display: block;
+	width: 100%;
+	background-color: maroon;
+}
+
 
 /* ==============
     MOBILE: Header
@@ -485,13 +492,17 @@ h2.main-title { /*for non article pages*/
 /* ===== Primary Styles ========================================================
    Author:
    ========================================================================== */
-
-h3.boxed{
+   
+   
+   
+   h3.boxed{
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-top: 0;
 	padding-bottom: 0;
 }
+
+
 
 li{
 	list-style-type: none;

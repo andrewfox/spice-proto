@@ -11,10 +11,12 @@
 ul.menu li {
 	display: inline;
 }
-ul.menu li.menu-link {
+ul.menu li.menu-link{
 	display: none;
 }
-
+ul.menu.cloned {
+	display: none;
+}
       
    /*MAIN*/   
       

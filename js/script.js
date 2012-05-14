@@ -4,16 +4,18 @@ $(document).ready(function(){
 
 var menu=false;
 
-$("a#menu").click(function () {
+$("a.menua").click(function () {
 	if (menu==false) {
-		$('ul.menu').appendTo('nav.primary');
-		$('ul.menu').removeClass('hide');
 		menu=true;
+		$('ul.menu.hide')
+			.clone()
+			.addClass('cloned')
+			.appendTo('nav.primary')
+		$('ul.cloned').removeClass('hide');
+		$('ul.cloned li.menu-link').remove();
 	}
 	else {
-		$('ul.menu').prependTo('nav.primary');
-		$('ul.home').prependTo('nav.primary');
-		$('ul.menu').addClass('hide');
+		$('ul.cloned').remove();
 		menu=false;
 	}
 });
