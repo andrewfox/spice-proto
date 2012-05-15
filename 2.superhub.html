@@ -23,6 +23,92 @@
 	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 	<script src="js/libs/jquery-1.7.1.min.js"></script>
 	<script src="js/script.js"></script>
+	<!-- Load the Google APIs -->
+	 <script src="http://www.google.com/jsapi"></script>
+	 <script>
+	 // Load the map scripts
+	 google.load('maps', '3', {other_params:'sensor=true'});
+	
+	 // Function to create a map and check for geolocation
+	 function mapInit() {
+	
+	 // Set the options to be used when creating the map
+	 var myOptions = {
+	 zoom: 0,
+	 center: new google.maps.LatLng(0, 0),
+	 mapTypeId: google.maps.MapTypeId.ROADMAP
+	 };
+	
+	 // Create the new
+	 map = new google.maps.Map(document.getElementById("map"), myOptions);
+	
+	 // Check if the browser supports geolocation
+	 if(navigator.geolocation) {
+	
+	 navigator.geolocation.getCurrentPosition(currentPositionCallback);
+	
+	 } else {
+	
+	 alert('The browser does not support geolocation');
+	
+	 }
+	
+	 }
+	
+	 function currentPositionCallback(position) {
+	
+	 // Create a new latlng based on the latitude and longitude from the user's position
+	 var user_lat_long = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+	
+	 // Add a marker using the user_lat_long position
+	 var marker = new google.maps.Marker({
+	 position: user_lat_long,
+	 map: map
+	 });
+	
+	 // Set the center of the map to the user's position and zomm into a more detailed level
+	 map.setCenter(user_lat_long);
+	 map.setZoom(15);
+	
+	 }
+	
+	 google.setOnLoadCallback(mapInit);
+	
+	 </script>
+	 
+	 <script type="text/javascript">
+	     var locations = [
+	       ['Bondi Beach', -33.890542, 151.274856, 4],
+	       ['Coogee Beach', -33.923036, 151.259052, 5],
+	       ['Cronulla Beach', -34.028249, 151.157507, 3],
+	       ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+	       ['Maroubra Beach', -33.950198, 151.259302, 1]
+	     ];
+	 
+	     var map = new google.maps.Map(document.getElementById('map'), {
+	       zoom: 10,
+	       center: new google.maps.LatLng(-33.92, 151.25),
+	       mapTypeId: google.maps.MapTypeId.ROADMAP
+	     });
+	 
+	     var infowindow = new google.maps.InfoWindow();
+	 
+	     var marker, i;
+	 
+	     for (i = 0; i < locations.length; i++) {  
+	       marker = new google.maps.Marker({
+	         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+	         map: map
+	       });
+	 
+	       google.maps.event.addListener(marker, 'click', (function(marker, i) {
+	         return function() {
+	           infowindow.setContent(locations[i][0]);
+	           infowindow.open(map, marker);
+	         }
+	       })(marker, i));
+	     }
+	   </script>
 </head>
 
 <body>
@@ -94,9 +180,9 @@
 				<p>And 16 ways to spend them!</p>
 			</div>
 		</div>
-
-		<iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/?ie=UTF8&amp;hq=&amp;hnear=61A+Hackney+Rd,+London+E2+7NX,+United+Kingdom&amp;ll=51.593934,-0.130076&amp;spn=0.020422,0.045447&amp;t=m&amp;z=15&amp;output=embed"></iframe>
-
+		<div id="map">
+			<!--<iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/?ie=UTF8&amp;hq=&amp;hnear=61A+Hackney+Rd,+London+E2+7NX,+United+Kingdom&amp;ll=51.593934,-0.130076&amp;spn=0.020422,0.045447&amp;t=m&amp;z=15&amp;output=embed"></iframe>-->
+		</div>
 
 	</div> <!-- #hubintro -->
 	
