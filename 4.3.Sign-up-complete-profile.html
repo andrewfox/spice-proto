@@ -60,20 +60,52 @@
 	
 	<h2>Welcome! You are now a member of Alexander Palace Time Credits.</h2>
 	<h2><a href="#">Sign in now</a></h2>
-	<h3>We just need these three details:</h3>
+	<h2>...or complete your profile now (you can do this later in the Settings area if you prefer</h2>
+	<h3>About you</h3>
 	
 	<form method="post" action="">
-		<label for="username">What do you want you're username to be?</label>
-		<input type="text" name="username" value='e.g. batman or dom-burton'/>
+		<label for="photo">Upload a profile picture</label>
+		<input type="button" name="photo" value='Choose file'/> no file selected
 		
-		<label for="password">What do you want you're password to be?</label>
-		<input type="text" name="username"/>
-	
-		<label for="dt">What's your date of Birth</label>
+		<label for="name">What's you're real name?</label>
+		<input type="text" name="name" value='Bruce Wayne or Dom Burton'/>
+			
+		<label for="gender">What's you're gender?</label>
+		<select name="gender">
+		  <option value="private">Rather not say</option>
+		  <option value="male">Male</option>
+		  <option value="female">Female</option>
+		</select>
 		
-				
-		<p><input type="checkbox" name="vehicle" value="terms" />I have read and understood the <a href="terms-conditions.html">Terms &amp; Conditions</a></p>
-		<p><input type=submit value="Become a member"></p>
+		<label for="name">Do you have a disability?</label>
+		<input type="checkbox" name="vehicle" value="terms" />
+		Yes <input type="text" name="name" value='e.g. blind'/>
+		
+		<h3>Contact details</h3>
+		<label for="postcode">Address (enter your postcode)</label>
+		<input type="text" name="postcode" value='e.g. EX12 2TA'/>
+		<input type="button" name="findaddress" value='Find Address'/>
+		
+		<label for="mobile">Your mobile number</label>
+		<input type="text" name="mobile" value='e.g. 0765412341'/>
+		
+		<label for="phone">Your mobile number</label>
+		<input type="text" name="phone" value='e.g. 01824 335874'/>
+		
+		<h3>Social Networking Details</h3>
+		
+		<label for="twitter">Twitter</label>
+		<input type="text" name="twitter" value='@mytwitterusername'/>
+		
+		<label for="facebook">Facebook</label>
+		<input type="text" name="facebook" value='myfacebookusername'/>
+		
+		<label for="message"><h3>Do you want to send us a messages? Enter it below:</h3></label>
+		<textarea rows="10" cols="50">e.g.</textarea>
+		
+		
+
+		<p><input type=submit value="Save your details"></p>
 	
 	</form>				
 			

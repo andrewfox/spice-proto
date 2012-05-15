@@ -88,7 +88,7 @@ p{
 	margin-bottom: 0;
 }
 
-label {
+label, form p {
 	display: block;
 	padding-top: 15px;
 	padding-bottom: 5px;
