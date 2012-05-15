@@ -311,7 +311,9 @@ ul.video iframe {
 	padding: 5px;
 }
 
-#hub-list{
-	margin-left: 210px;
+.main-list {
+	margin-left: 1em;
 }
+
+
 
