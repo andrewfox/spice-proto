@@ -317,6 +317,11 @@ article {
 	height: 400px;
 }
 
+.page-heading {
+	display: block;
+	clear: both;
+}
+
 article:nth-child(even) {
 
 }
@@ -442,6 +447,8 @@ footer {
 #link-to-business {
 	margin-left: 50%;
 }
+
+
 
 #full-width-image {
 	float: left;
