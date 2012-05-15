@@ -159,7 +159,7 @@ article {
 	float: left;
 }
 
-#articles-full article {
+#articles-full article, ul.video-slider li {
 	width: 30.6666667%;
 	padding-right: 1.33333333%;
 	padding-left: 1.33333333%;
@@ -281,14 +281,24 @@ ul.video iframe {
 
 #bus-video-intro{
 	overflow: hidden;
-	margin-left: -10px;
+	width: 100%;
 }
 
+ul.video-slider {
+	width: 120%;
+	display: block;
+	float: left;
+	margin-left: -10%;
+	overflow: hidden;
+}
 
 #video-intro{
 	background-color: silver;
-	width: 1540px;
-	margin-left: -270px;
+}
+
+ul.video-slider li {
+	display: block;
+	float: left;
 }
 
 #about-slider{
@@ -305,7 +315,6 @@ ul.video iframe {
 }
 
 #contact-us-box{
-	width: 330px;
 	background-color: silver;
 	height: 300px;
 	padding: 5px;

@@ -407,17 +407,18 @@ aside{
 
 /*VIDEO*/
 ul.video {
-	width: 100%;
 	margin: 0;
 	padding: 0;
 }
 ul.video li {
 	text-align: center;
 }
-ul.video iframe {
-	width: 80%;
-	height: 170px;
+ul.video iframe, ul.video-slider iframe {
+	width: 100%;
+	height: 200px;
 }
+
+
 
 /*FOOTER*/
 
