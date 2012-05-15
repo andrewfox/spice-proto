@@ -430,9 +430,9 @@ footer {
 	text-align: center;
 }
 
-#bus-intro img {
-	width: 80%;
+#articles-title img {
 	height: 240px;
+	width: 100%;
 }
 
 #share {

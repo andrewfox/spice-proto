@@ -124,10 +124,11 @@ ul.menu.cloned {
 
 #articles-title {
 	float: left;
-	width: 98%;
+	width: 96%;
 	padding-right: 0;
 	padding-left: 0;
 	margin-left: 2%;
+	margin-right: 2%;
 }
 
 #articles h2 {
@@ -236,9 +237,7 @@ ul.details {
 	background-color: silver;
 }
 
-#bus-intro{
-	margin-left: 210px;
-}
+
 
 #share {
 	float: left;
