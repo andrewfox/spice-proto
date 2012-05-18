@@ -97,6 +97,18 @@ label, form p {
 h1, h2, h3,h4,h5{
 }
 
+h5.time {
+	display: none;
+}
+
+p.details {
+	display: none;
+}
+
+#articles h3.more {
+	width: 100%;
+}
+
 h2{
 	padding-top: 5px;
 	padding-bottom: 2px;
@@ -119,7 +131,6 @@ h2{
 
 nav.primary  {
 	text-align: right;
-	padding: 4px;
 }
 nav.primary ul {
 	text-align: right;
@@ -135,6 +146,7 @@ nav a {
 	text-decoration:none;
 	font-weight: bold;
 	padding: 3px;
+	margin-right: 2px;
 }
 nav a:hover, nav a:visited{
 	color:white;
@@ -171,6 +183,17 @@ ul.menu.cloned {
 	background-color: maroon;
 }
 
+#page-nav{
+	
+}
+
+#page-nav ul li a {
+	color: blue;
+}
+
+#page-nav ul li a:hover {
+	color: black;
+}
 
 /* ==============
     MOBILE: Header
@@ -184,6 +207,8 @@ ul.menu.cloned {
 #header-local {
 	background: #777;
 }
+
+
 
 #join-us {
 	background-color: silver;
@@ -269,26 +294,6 @@ li.middle-margin {
 	margin-top: 10px;
 	clear: both;
 }
-#articles-title  {
-	padding: 10px
-}
-#articles-title p {
-	margin-bottom: 10px;
-}
-
-h3.notify.offering {
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin: 0 5px 0 30px;
-}
-
-li.offering {
-		background: url(../img/plus.png) no-repeat 5px 3px;
-	
-}
 
 #map-side{
 	width: 100%;
@@ -296,6 +301,68 @@ li.offering {
 	background-color: silver;
 }
 
+#articles-title, #articles h2  {
+	padding: 10px;
+	width: 1px;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+#articles-title p {
+	margin-bottom: 10px;
+}
+
+
+/*NOTIFICATIONS*/
+
+h3.notify.offering {
+	/*text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;*/
+
+
+}
+
+.details{
+	width: 100%;
+}
+
+.expand{
+	display: block;
+}
+ 
+
+li.offering {
+		
+	}
+	
+ul.notify-details {
+		display: block;
+	}
+	
+.notifications li {
+	background: url(../img/plus.png) no-repeat 0px 5px;
+	display: block;
+	clear: both;
+	cursor: pointer;
+	}
+	
+.notifications li h3 {
+padding-top: 5px;
+padding-bottom: 5px;
+margin: 0 5px 0 30px;
+	}
+	
+ul.notify-details li {
+	margin: 2px 2px 2px 0;
+	padding: 5px;
+	background: url(none) ;
+}
+		
+		
+		
+	
 /*FONTS*/
 #main #hubintro ul li h3 {
 	font-size: 20px;
@@ -322,12 +389,13 @@ article {
 	padding-right: 2%;
 	padding-left: 2%;
 	float: left;
-	height: 400px;
+	height: 420px;
 }
 
 .page-heading {
 	display: block;
 	clear: both;
+	width: 100%;
 }
 
 article:nth-child(even) {
@@ -363,6 +431,11 @@ aside{
 	clear: both;
 	padding: 5px;
 }
+
+div.offering-action {
+	clear: both;
+}
+
 #hub-desc {
 	clear: left;
 }
@@ -392,6 +465,25 @@ aside{
 
 
 
+h5.status {
+	font-style: italic;
+	margin: 0;
+}
+
+ul.actions li a {
+	float: left;
+	margin-right: 5px;
+	padding-bottom: 5px;
+}
+
+#articles-aside article {
+	
+}
+
+#articles-aside article header img {
+	width: 100%;
+}
+
 /*Hub stats*/
 /*
 .expanded {
@@ -407,6 +499,11 @@ aside{
 .hub-stats li {
 	width: 25%;
 	float: left;
+}
+.attendees li {
+	width: 100%;
+	clear: both;
+	display: block;
 }
 
 .hub-stats h1 {
@@ -433,10 +530,61 @@ ul.video iframe, ul.video-slider iframe {
 }
 
 
+/*STATEMENT*/
+
+
+
+div.statement-amount {
+	float: left;
+	display: block;
+	width: 90px;
+}
+
+p.amount {
+	font-size: 5em;
+	float: right;
+}
+
+
+
+.statement h2 {
+	float: left;
+	display: inline;
+	margin-left: 100px;
+	font-size: 1.5em;
+	margin-top: -30px;
+	text-align: left;
+}
+
+#statement ul.statement li {
+	clear: both;
+	float: left;
+	height: 80px;
+	display: block;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+#statement ul.statement li div.title ul.statement-details li {
+	display: inline-block;
+	float: left;
+	clear: right;
+	margin-right: 20px;
+	margin-top: -16px;
+}
+
+ul.statement-details{
+	margin-left: 100px;
+}
+
 
 /*FOOTER*/
 
-footer {
+
+
+#articles article footer {
 	padding: 5px;
 	background-color: silver;
 	color:white;
@@ -445,9 +593,10 @@ footer {
 }
 
 #articles-title img {
-	height: 240px;
 	width: 100%;
 }
+
+
 
 #share {
 	float: left;

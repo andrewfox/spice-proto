@@ -1,6 +1,7 @@
 /* ====================
        INTERMEDIATE
       ==================== */
+  
    /* ==============
        DESKTOP: Menu
       ============== */
@@ -122,7 +123,7 @@ ul.menu.cloned {
 	padding-right: 4%;
 }
 
-#articles-title {
+#articles-title, .page-heading, #articles h2 {
 	float: left;
 	width: 96%;
 	padding-right: 0;
@@ -136,6 +137,11 @@ ul.menu.cloned {
 	margin-top: 0;
 }
 
+#articles-aside article {
+	width: 100%;
+	height: auto;
+}
+
 #map {
 	height: 220px;
 }
@@ -146,9 +152,13 @@ ul.menu.cloned {
 	float: left;
 }
 
-#articles{
+#articles, #statement{
 	margin-left: 33.33333333%;
 	margin-top: 10px;
+}
+
+#statement{
+	padding-left: 20px;
 }
 
 

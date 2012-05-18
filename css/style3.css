@@ -44,6 +44,14 @@ h3.more-spacer{
 	float: right;
 }
 
+div#join-us.join-us-member {
+	float: none;
+	margin: 0;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	padding-top: 1px;
+}
+
 aside{
 	width: 22.9166667%; /*220/960px*/
 	padding-right: 1.04166667%; /*10/960px*/
@@ -75,10 +83,12 @@ aside #join-us {
      	margin-left: -0.333333332%;
      }
      
-     #articles {
+     #articles, #statement {
      	margin-right: 0;
      	margin-left: 25%; /*240/960px gives a main of 740*/
      }
+     
+     
      
 /*VIDEO*/
 

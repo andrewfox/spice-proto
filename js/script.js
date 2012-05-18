@@ -21,4 +21,17 @@ $("a.menua").click(function () {
 });
 
 
- });
+
+
+$('.notifications li .details').hide();
+
+$(".notifications h3").click(function () {
+	
+	//this turns allows expanding only when scoring mode is off
+	$(this).siblings('.details').slideToggle();
+		
+});
+	
+
+
+});
