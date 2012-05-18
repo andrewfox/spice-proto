@@ -157,8 +157,12 @@ ul.menu.cloned {
 	margin-top: 10px;
 }
 
-#statement{
-	padding-left: 20px;
+#statement {
+	width: 65%;
+	clear: none;
+	float: right;
+	margin: 0;
+	padding: 0;
 }
 
 

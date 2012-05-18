@@ -27,11 +27,40 @@ $('.notifications li .details').hide();
 
 $(".notifications h3").click(function () {
 	
-	//this turns allows expanding only when scoring mode is off
+	//expands:
 	$(this).siblings('.details').slideToggle();
 		
 });
-	
 
+$('#advanced-expanded').hide();
+
+	
+$("#advanced h3").click(function () {
+	
+	//expands:
+	$(this).siblings('#advanced-expanded').toggle();
+		
+});
+
+$(".dismiss").click(function () {
+	
+	$(this).parent().parent().parent().hide();
+	
+});
+
+$(".cancel").click(function () {
+	
+	$(this).parent().parent().hide();
+	
+});
+	
+$("#join-form form.join-now input").click(function () {
+	
+	alert("hi");
+	window.location.href = '4.2.Sign-up-confirm-and-form.html';
+	
+});
+	
+	
 
 });

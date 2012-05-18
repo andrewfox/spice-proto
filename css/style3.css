@@ -83,12 +83,18 @@ aside #join-us {
      	margin-left: -0.333333332%;
      }
      
-     #articles, #statement {
+     #articles {
      	margin-right: 0;
      	margin-left: 25%; /*240/960px gives a main of 740*/
      }
      
-     
+     #statement {
+     	width: 70%;
+     	clear: none;
+     	float: right;
+     	margin: 0;
+		padding: 0;
+	 }
      
 /*VIDEO*/
 

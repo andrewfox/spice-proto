@@ -50,7 +50,7 @@
 		</ul>
 		<ul id="sign-in">
 			<li><a href="#">Settings</a></li>
-			<li><a href="#">Sign out</a></li>
+			<li><a href="../public/1.spice-homepage.html">Sign out</a></li>
 		</ul>
 	</nav>
 </header> <!-- header global -->
@@ -69,7 +69,11 @@
 	</div>
 	
 </header>	
-			
+
+<div id="page-title">
+		<h1>Create a new offering</h1>
+</div>		
+
 <aside>
 	<h2>Instructions</h2>
 	
@@ -84,25 +88,23 @@
 <div id="main" class="wrapper clearfix">
 	<div id="articles">
 		
-		<div id="page-title">
-			<h1>Create a new offering</h1>
-		</div>
+		
 		<div id="create-offering-simple">
-			
-			<label for="off-name">What's the name of your Offering?*</label>
-			<input type="text" name="off-name" value='Help build a community solar energy farm'/>
-			
-			<label for="off-desc">Enter a description*</label>
-			<textarea name="off-desc" rows="10" cols="50">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</textarea>
-		
-		
-		</div>
-		
-		<a href="#">Advanced</a>
-		
-			<div id="create-offering-advanced">
 			<form method="post" action="">
+			
+				<label for="off-name">What's the name of your Offering?*</label>
+				<input type="text" name="off-name" value='Help build a community solar energy farm'/>
 				
+				<label for="off-desc">Enter a description*</label>
+				<textarea name="off-desc" rows="10" cols="50">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</textarea>
+			
+			
+		</div>
+		<div id="advanced">
+			
+			<h3>Advanced</h3>
+		
+			<div id="advanced-expanded">
 					
 				<label for="offering-type">Is this a SPEND or EARN Offering?</label>
 				<select name="offering-type">
@@ -195,16 +197,15 @@
 				
 				<label for="message"><h3>Do you want to send us a messages? Enter it below:</h3></label>
 				<textarea rows="10" cols="50">e.g.</textarea>
-			
+				
+				<p><input type=submit value="Preview Offering"></p>
+				<p><input type=submit value="Publish Offering"></p>
+				
+				</form>		
 			</div> <!--end of advanced-->
-			
-			
-	
-			<p><input type=submit value="Preview Offering"></p>
-			<p><input type=submit value="Publish Offering"></p>
-		
-		</form>				
-			
+					
+		</div> <!-- #advanced -->
+				
 	</div> <!-- #articles-full -->
 			
 </div> <!-- #main -->
