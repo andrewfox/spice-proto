@@ -54,13 +54,12 @@ $(".cancel").click(function () {
 	
 });
 	
-$("#join-form form.join-now input").click(function () {
-	
-	alert("hi");
-	window.location.href = '4.2.Sign-up-confirm-and-form.html';
-	
-});
-	
+//$("#join-form form.join-now input").click(function () {
+//	
+//	window.location.href = '4.2.Sign-up-confirm-and-form.html';
+//	
+//});
+//	
 	
 
 });

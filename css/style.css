@@ -91,7 +91,10 @@ body{
 	
 }
 
-
+#main, #after-main {
+   	padding-right: 0;
+   	padding-left: 0;
+   }
 
 p{
 	margin-top: 0;
@@ -315,16 +318,13 @@ li.middle-margin {
 	background-color: silver;
 }
 
-#articles-title, #articles h2  {
-	padding: 10px;
-	width: 1px;
-	width: 100%;
-	display: block;
-	float: left;
-}
+
 
 #articles-title p {
 	margin-bottom: 10px;
+	clear: both;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 
@@ -391,9 +391,10 @@ ul.notify-details li {
    ============== */
 
 #main{
-	padding: 0px 0 10px;
 	margin-bottom: 20px;
 	background-color: #F1F1EF;
+	padding-top: 0px;
+	padding-bottom: 10px;
 }
 
 #main article h1{
@@ -422,6 +423,7 @@ article:nth-child(even) {
 /* COLUMNS */
 #col-1, #col-2, #col-3 {
 	padding: 0 10px;
+	clear: both;
 }
 
 #articles article header img {

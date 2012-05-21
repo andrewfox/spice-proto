@@ -32,9 +32,9 @@ h3.more-spacer{
 	padding-left: 2%;
 }
    
-   #local-title {
-   	width: 73%;
-   }
+#local-title {
+	width: 73%;
+}
    
 #join-us {
 	-moz-border-radius: 5px;
@@ -66,35 +66,27 @@ aside #join-us {
 }
  
  
-   #hubintro{
-   }
-   
-   #main {
-      	padding-right: 10px;
-      	padding-left: 10px;
-      }
- 
+#hubintro{
+}
 
+    
+#articles-full {
+	margin-right: -0.666666664%;
+	margin-left: -0.333333332%;
+}
 
-     
-     
-     #articles-full {
-     	margin-right: -0.666666664%;
-     	margin-left: -0.333333332%;
-     }
-     
-     #articles {
-     	margin-right: 0;
-     	margin-left: 25%; /*240/960px gives a main of 740*/
-     }
-     
-     #statement {
-     	width: 70%;
-     	clear: none;
-     	float: right;
-     	margin: 0;
-		padding: 0;
-	 }
+#articles {
+	margin-right: 0;
+	margin-left: 25%; /*240/960px gives a main of 740*/
+}
+
+#statement {
+	width: 70%;
+	clear: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
      
 /*VIDEO*/
 

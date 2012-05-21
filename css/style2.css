@@ -123,6 +123,19 @@ ul.menu.cloned {
 	padding-right: 4%;
 }
 
+#articles-title, #articles h2  {
+	padding: 10px;
+	width: 1px;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+#articles-title p {
+	margin-right: 0;
+	margin-left: 0;
+}
+
 #articles-title, .page-heading, #articles h2 {
 	float: left;
 	width: 96%;
