@@ -86,6 +86,8 @@ if (newactivity==false) {
     $('#activity').hide();
 	$("#add-new-activity").show();
 	$("#select-branch").show();
+	$("#enter-details").show();
+	
 }
 
 else {
@@ -97,6 +99,7 @@ else {
 }
 	
 });
+
 
 //if ("#new-activity") {
 //	
@@ -111,6 +114,12 @@ $('.add-mem').hide();
 $('.be').hide();
 
 $('#activity').hide();
+
+$('#advanced').hide();
+
+$('#activity-address').hide();
+
+
 
 //if (("orange").selected=true) {
 //	alert("hi")
@@ -193,6 +202,13 @@ $('#no-of-credits').keyup(function() {
 });
 
 
+$("#open-advanced").click(function () {
+	
+
+	$("#advanced").slideToggle();
+
+});
+
 //-------------------------------
 //Add new activity
 //-------------------------------
@@ -206,7 +222,7 @@ $('#activity-new').keyup(function() {
 
 $("#add-new-activity").click(function () {
 	
-	$('#activity').replaceWith('<div id="activity"><article class="register"><header><h3>' + activitytitle + '</h3><h5>Today | <a href="m.2.1.hub.html">Alexander School &#9660;</a></header></article></div>');
+	$('#activity').replaceWith('<div id="activity"><div id="activity-x"></div><article class="register"><header><h3>' + activitytitle + '</h3><h5>Today | <a href="m.2.1.hub.html">Alexander School &#9660;</a></header></article></div>');
 	$('#activity').show();
 	$('.members-list').show();
 	$('.litter').hide();
@@ -215,8 +231,16 @@ $("#add-new-activity").click(function () {
 	$('.action.addmember').hide();
 	$(".add-mem").show();
 	$("#select-activity").hide();
-	
-	
+	$('#activity-address').show();
+
+});
+
+
+
+$("#activity-x").click(function () {
+	$("#select-activity").show();
+	$("#activity").hide();
+	$("#enter-details").hide();
 
 });
 
@@ -280,6 +304,9 @@ $('#list').change(function() {
         // Do something for option "b"
         $('#members-litter').show();
         $('#activity').show();
+        $("#select-activity").hide();
+        $("#enter-details").show();
+        
     }
 });
 
