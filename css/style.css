@@ -95,8 +95,10 @@ body{
    	padding-right: 0;
    	padding-left: 0;
    }
-
-p{
+   
+   
+   
+   p{
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -130,6 +132,175 @@ h2{
 	font-size: 22px;
 	line-height: 120%;
 }
+
+/*FORMS*/
+
+#main form.activity input {
+	
+}
+
+
+
+.members li {
+	margin-bottom: 5px;
+	display: block;
+	padding: 2px 5px;
+	border: 1px solid gray;
+	float: left;
+	clear: left;
+}
+
+li.remove-member, li.action {
+	clear: none;
+	padding: 1px 5px;
+	background-color: #D9D9D9;
+	color: white;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border-color: #D9D9D9;
+	cursor: pointer;
+}
+
+li.remove-member:hover, li.add-button:hover, li.action:hover {
+	background-color: gray;
+	border-color: gray;
+}
+
+input#new-mem {
+	
+}
+
+div.members-list {
+	float: left;
+	display: block;
+	clear: both;
+}
+
+#main.admin {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+li.add-button {
+	clear: none;
+	padding: 1px 5px;
+	background-color: #D9D9D9;
+	color: white;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border-color: #D9D9D9;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+li.add-mem {
+	
+}
+
+li.member {
+	border-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#main form h3 {
+	clear: left;
+	float: none;
+	display: block;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+#total {
+	clear: both;
+	float: left;
+}
+
+input#no-of-credits, input#no-of-credits-per-member, input#no-of-members {
+	width: 80px;
+}
+
+label.admin {
+	margin: 0;
+	padding: 0 0 10px;
+}
+
+#sum {
+	display: inline;
+	float: left;
+	margin-top: 10px;
+	clear: left;
+}
+
+span#total {
+}
+
+#activity {
+	width: 100%;
+	margin: 10px 0;
+	display: block;
+	float: left;
+	background-color: #D9D9D9;
+}
+
+article.register {
+	width: auto;
+	padding: 5px 10px;
+	height: auto;
+}
+
+#activity article.register section p {
+	margin: 0;
+	padding: 0;
+}
+
+#main form article.register header h3 {
+	padding: 0;
+	margin: 0;
+}
+
+ul#members-litter.members {
+	clear: both;
+	float: left;
+}
+
+li.credit {
+	clear: none;
+	margin-left: 10px;
+}
+
+li.tc, li.add-mem {
+	border-style: none;
+	clear: none;
+}
+
+/*li.action {
+	background-color: gray;
+	color: white;
+	cursor: pointer;
+	border-radius: 15px;
+	border-color: #D9D9D9;
+}*/
+
+
+
+/*
+input.activity {
+	width: 80%;
+	height: 50px;
+	font-size: 34px;
+	margin: 0;
+	padding: 0;
+}
+
+button.new {
+	height: 50px;
+	font-size: 2em;
+	width: 18%;
+	margin: 0;
+	padding: 0;
+}*/
+
 
 /* ==============
     MOBILE: Menu
