@@ -55,7 +55,7 @@
 <div id="main" class="wrapper clearfix admin">
 			
 	<div id="page-title">
-		<h1>Register earn activity</h1>
+		<h1>Register spend activity</h1>
 	</div>
 	
 	<form>
@@ -63,10 +63,10 @@
 	
 <!--	<label for="activity">Activity</label>-->
 <div id="select-activity">
-	<h3>Activity</h3>
+	<h3>Member is paying with paper Time Credits</h3>
 		<select id="list">
 		<option value='01'>Select activity</option>
-		<option value='02'>Litter Picking</option>
+		<option value='02'>Football in Cardiff</option>
 		<option value='03'>Dusting</option>
 		<option value='04'>Building Walls</option>
 		<option value='05'>Harvesting Broad Beans</option>
@@ -82,9 +82,11 @@
 			<option value='04'>Pentonville Prison Time Credits</option>
 			<option value='05'>Alexander Palace Time Credits</option>		
 			</select>
+	<h3>Member has a code</h3>
 		
-		<input type="button" id="add-new-activity" class="new" value="Add">
-		<input type="button" id="new-activity" class="new" value="Create new activity">
+		<input id="new-mem" name="activity" type="text"  name="username" value='Enter code' onClick="this.value=''"/>
+		
+		<input type="button" id="new-activity" class="new" value="Check code">
 		
 </div>
 

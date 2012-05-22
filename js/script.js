@@ -119,6 +119,8 @@ $('#advanced').hide();
 
 $('#activity-address').hide();
 
+$('#enter-details').hide();
+
 
 
 //if (("orange").selected=true) {
