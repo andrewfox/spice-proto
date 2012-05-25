@@ -224,7 +224,7 @@ $('#activity-new').keyup(function() {
 
 $("#add-new-activity").click(function () {
 	
-	$('#activity').replaceWith('<div id="activity"><div id="activity-x"></div><article class="register"><header><h3>' + activitytitle + '</h3><h5>Today | <a href="m.2.1.hub.html">Alexander School &#9660;</a></header></article></div>');
+	$('#activity').replaceWith('<div id="activity"><div class="activity-x"></div><article class="register"><header><h3>' + activitytitle + '</h3><h5>Today | <a href="m.2.1.branch.html">Alexander School &#9660;</a></header></article></div>');
 	$('#activity').show();
 	$('.members-list').show();
 	$('.litter').hide();
@@ -239,9 +239,8 @@ $("#add-new-activity").click(function () {
 
 
 
-$("#activity-x").click(function () {
+$(".activity-x").click(function () {
 	$("#select-activity").show();
-	$("#activity").hide();
 	$("#enter-details").hide();
 
 });

@@ -235,7 +235,7 @@ label.admin {
 span#total {
 }
 
-#activity-x {
+.activity-x {
 	background: url(../img/x_10x10.png) no-repeat;
 	width: 10px;
 	height: 10px;
@@ -439,13 +439,13 @@ h4#short-dec{
     MOBILE: Intro
    ============== */
 
-#hubintro {
+#branchintro {
 	padding: 0;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-/*#hubintro ul li {
+/*#branchintro ul li {
 	width: 31.25%;
 	padding: 0.729166667%;
 	height: 60px;
@@ -512,7 +512,7 @@ li.middle-margin {
 
 /*NOTIFICATIONS*/
 
-h3.notify.offering {
+h3.notify.activity {
 	/*text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;*/
@@ -529,7 +529,7 @@ h3.notify.offering {
 }
  
 
-li.offering {
+li.activity {
 		
 	}
 	
@@ -563,7 +563,7 @@ ul.notify-details li {
 		
 	
 /*FONTS*/
-#main #hubintro ul li h3 {
+#main #branchintro ul li h3 {
 	font-size: 20px;
 	line-height: 24px;
 }
@@ -639,23 +639,23 @@ aside{
 	padding: 5px;
 }
 
-div.offering-action {
+div.activity-action {
 	clear: both;
 }
 
-#hub-desc {
+#branch-desc {
 	clear: left;
 }
-#hub-desc p {
+#branch-desc p {
 	margin: 8px 0;
 }
-#hub-family {
+#branch-family {
 	border-top: 1px solid #ccc;
 	margin: 0.5em 0;
 	padding: 0.5em 0 0 0;
 	clear: both;
 }
-#hub-family ul {
+#branch-family ul {
 	font-size: 120%;
 }
 #share {
@@ -691,19 +691,19 @@ ul.actions li a {
 	width: 100%;
 }
 
-/*Hub stats*/
+/*Branch stats*/
 /*
 .expanded {
 	display: block;
 }*/
 
-.hub-stats {
+.branch-stats {
 	padding: 3px;
 	background-color: silver;
 	margin-bottom: 4px;
 }
 
-.hub-stats li {
+.branch-stats li {
 	width: 25%;
 	float: left;
 }
@@ -713,12 +713,12 @@ ul.actions li a {
 	display: block;
 }
 
-.hub-stats h1 {
+.branch-stats h1 {
 	margin: 2px;
 	padding: 0;
 	color: white;
 }
-.hub-stats p {
+.branch-stats p {
 	font-size: 11px;
 }
 
@@ -806,7 +806,7 @@ ul.statement-details{
 	float: left;
 }
 
-#link-to-business {
+#link-to-partner {
 	margin-left: 50%;
 }
 
@@ -838,7 +838,7 @@ ul.statement-details{
 	margin-right: 15px;
 }
 
-#info-member-hubs {
+#info-member-branchs {
 	clear: both;
 	padding-top: 5px;
 }

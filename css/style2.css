@@ -59,7 +59,7 @@ ul.menu.cloned {
    
    
    
-   #hubintro {
+   #branchintro {
    	clear: both;
    }
    
@@ -84,10 +84,10 @@ ul.menu.cloned {
    
    /*join earn spend*/
    
-   #hubintro{
+   #branchintro{
 }
 
-#hubintro ul li {
+#branchintro ul li {
 	margin-bottom: 9px;
 }
 
@@ -199,7 +199,7 @@ article {
 }
 
 
-.hub-stats li {
+.branch-stats li {
 	width: 50%;
 }
 
@@ -271,7 +271,7 @@ ul.details {
 	margin-bottom: 10px;
 }
 
-#link-to-business {
+#link-to-partner {
 	margin-left: 210px;
 }
 
@@ -281,7 +281,7 @@ ul.details {
 	width: 100%;
 }
 
-#main #hubintro.bottom {
+#main #branchintro.bottom {
 	width: 100%;
 	clear: both;
 	padding-top: 10px;

@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Alexander School Time Credits | Spice</title>
+	<title>Alexander Palace Time Credits | Spice</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -23,6 +23,92 @@
 	<script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 	<script src="../js/libs/jquery-1.7.1.min.js"></script>
 	<script src="../js/script.js"></script>
+	<!-- Load the Google APIs -->
+	 <script src="http://www.google.com/jsapi"></script>
+	 <script>
+	 // Load the map scripts
+	 google.load('maps', '3', {other_params:'sensor=true'});
+	
+	 // Function to create a map and check for geolocation
+	 function mapInit() {
+	
+	 // Set the options to be used when creating the map
+	 var myOptions = {
+	 zoom: 0,
+	 center: new google.maps.LatLng(0, 0),
+	 mapTypeId: google.maps.MapTypeId.ROADMAP
+	 };
+	
+	 // Create the new
+	 map = new google.maps.Map(document.getElementById("map"), myOptions);
+	
+	 // Check if the browser supports geolocation
+	 if(navigator.geolocation) {
+	
+	 navigator.geolocation.getCurrentPosition(currentPositionCallback);
+	
+	 } else {
+	
+	 alert('The browser does not support geolocation');
+	
+	 }
+	
+	 }
+	
+	 function currentPositionCallback(position) {
+	
+	 // Create a new latlng based on the latitude and longitude from the user's position
+	 var user_lat_long = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+	
+	 // Add a marker using the user_lat_long position
+	 var marker = new google.maps.Marker({
+	 position: user_lat_long,
+	 map: map
+	 });
+	
+	 // Set the center of the map to the user's position and zomm into a more detailed level
+	 map.setCenter(user_lat_long);
+	 map.setZoom(15);
+	
+	 }
+	
+	 google.setOnLoadCallback(mapInit);
+	
+	 </script>
+	 
+<!--	 <script type="text/javascript">
+	     var locations = [
+	       ['Bondi Beach', -33.890542, 151.274856, 4],
+	       ['Coogee Beach', -33.923036, 151.259052, 5],
+	       ['Cronulla Beach', -34.028249, 151.157507, 3],
+	       ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+	       ['Maroubra Beach', -33.950198, 151.259302, 1]
+	     ];
+	 
+	     var map = new google.maps.Map(document.getElementById('map'), {
+	       zoom: 10,
+	       center: new google.maps.LatLng(-33.92, 151.25),
+	       mapTypeId: google.maps.MapTypeId.ROADMAP
+	     });
+	 
+	     var infowindow = new google.maps.InfoWindow();
+	 
+	     var marker, i;
+	 
+	     for (i = 0; i < locations.length; i++) {  
+	       marker = new google.maps.Marker({
+	         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+	         map: map
+	       });
+	 
+	       google.maps.event.addListener(marker, 'click', (function(marker, i) {
+	         return function() {
+	           infowindow.setContent(locations[i][0]);
+	           infowindow.open(map, marker);
+	         }
+	       })(marker, i));
+	     }
+	   </script>-->
 </head>
 
 <body>
@@ -40,9 +126,9 @@
 			<li class="menu-link"><a class="menua" href="#">Menu</a></li>
 			<li><a href="m.10.notifications.html">Notifications</a><h5>10</h5></li>
 			<li><a href="m.9.statement.html">Statement</a></li>
-			<li><a href="m.3.offerings.html">Offerings</a><h5>3</h5></li>
+			<li><a href="m.3.activities.html">Activities</a><h5>3</h5></li>
 			<li><a href="m.6.about-spice-and-time-credits.html">About Spice &amp; Time Credits</a></li>
-			<li><a href="m.5.for-business.html">For Business</a></li>
+			<li><a href="m.5.for-partner.html">For Partner</a></li>
 		</ul>
 		<ul id="lang">
 			<li class="lang-english"><a href="#">English</a></li>
@@ -61,7 +147,7 @@
 	<div id="local-title">
 		<img src="../img/article-sml.png" alt="article image"/>
 		<h1 id="subtitle">Pedro</h1>
-		<div id="info-member-hubs">Alexander School + 3 more hubs ></div>		
+		<div id="info-member-branchs">Alexander School + 3 more branchs ></div>		
 	</div>	
 		
 	<div id="credit-balance">
@@ -70,91 +156,93 @@
 	</div>
 	
 </header>
+	
 
 <div id="main" class="wrapper clearfix">
 
 	<div id="page-title">
-		<h1>Alexander School <em>Time Credits</em></h1>
-		<div id="join-us" class="join-us-member">
-			<h3 class="join boxed">You're not a member - <a href="#">ask to join us now!</a></h3>
-			<p class="join">[You may not be able to join the Hub if... etc]</p>
-		</div>
+		<h1>Alexander Palace <em>Time Credits</em></h1>
 	</div>
 
-	<iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/?ie=UTF8&amp;hq=&amp;hnear=London&amp;ll=51.593934,-0.130076&amp;spn=0.020422,0.045447&amp;t=m&amp;z=15&amp;output=embed"></iframe>
+	<div id="map">
+		<!--<iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/?ie=UTF8&amp;hq=&amp;hnear=London&amp;ll=51.593934,-0.130076&amp;spn=0.020422,0.045447&amp;t=m&amp;z=15&amp;output=embed"></iframe>-->
+	</div>
+
 	
 	<aside>
-	
-			<div id="share">Share: <a href="#">Facebook</a> <a href="#">Twitter</a></div>
-			
-			<div id="hub-desc">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation.</p>
-				<p>Visit the <a href="#">Alexander Palace Communtiry Centre website</a></p>
-			</div>
-			
-			<div id="hub-admin">
-				<p>Administrators:</p>
-				<ul>
-					<li>Michael Clark, [title]</li>
-					<li>Neil Tennant, [title]</li>
-					<li>Jason Pierce, [title]</li>
-					<li><a href="#">Email the administrators</a></li>
-				</ul>
-			</div>
-	
-			<ul class="hub-stats clearfix">
-			
-				<li>
-					<h1>2010</h1>
-					<p>Founded</p>
-				</li>
-				
-				<li>
-					<h1>98</h1>
-					<p>Members</p>
-				</li>
-				
-				<li>
-					<h1>13</h1>
-					<p>Earn Offerings</p>
-				</li>
-				
-				<li>
-					<h1>16</h1>
-					<p>Spend Offerings</p>
-				</li>
-				
+
+		<div id="share">Share: <a href="#">Facebook</a> <a href="#">Twitter</a></div>
+		
+		<div id="branch-desc">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation.</p>
+			<p>Visit the <a href="#">Alexander Palace Communtiry Centre website</a></p>
+		</div>
+		
+		<div id="branch-admin">
+			<p>Administrators:</p>
+			<ul>
+				<li>Michael Clark, [title]</li>
+				<li>Neil Tennant, [title]</li>
+				<li>Jason Pierce, [title]</li>
+				<li><a href="#">Email the administrators</a></li>
 			</ul>
+		</div>
+
+		<ul class="branch-stats clearfix">
+		
+			<li>
+				<h1>2010</h1>
+				<p>Founded</p>
+			</li>
 			
-			<div id="hub-family">
-				<p>Hubs in the Alexander Palace Time Credits area:</p>
-				<ul>
-					<li><a href="m.2.1.hub.html">Alexander School Hub</a></li>
-				</ul>
-			</div>
+			<li>
+				<h1>98</h1>
+				<p>Members</p>
+			</li>
 			
-			<div id="business-list">
-				<p>Businesses providing offerings:</p>
-				<ul>
-					<li><a href="m.5.2.0.business.html">Bowlplex</a></li>
-					<li><a href="m.5.2.0.business.html">Muswell Hill Bike Shop</a></li>
-					<li><a href="m.5.2.0.business.html">Tesco</a></li>
-				</ul>
-			</div>
+			<li>
+				<h1>13</h1>
+				<p>Earn Activities</p>
+			</li>
+			
+			<li>
+				<h1>16</h1>
+				<p>Spend Activities</p>
+			</li>
+			
+		</ul>
+		
+		<div id="branch-family">
+			<p>Branches in the Alexander Palace Time Credits area:</p>
+			<ul>
+				<li><a href="m.2.1.branch.html">Alexander School Branch</a></li>
+			</ul>
+		</div>
+		
+		<div id="partner-list">
+			<p>Partners providing activities:</p>
+			<ul>
+				<li><a href="m.5.2.0.partner.html">Bowlplex</a></li>
+				<li><a href="m.5.2.0.partner.html">Muswell Hill Bike Shop</a></li>
+				<li><a href="m.5.2.0.partner.html">Tesco</a></li>
+			</ul>
+		</div>
+		
+		
 
 	</aside>
 
 	<div id="articles">
 		<div id="articles-title">
-			<p>Offerings for you from Alexander School Time Credits</p>
-			<h2 class="page-heading">Earn Offerings</h2>
+			<p>Activities for you with Alexander Palace Time Credits</p>
+			<h2 class="page-heading">Earn Activities</h2>
 		</div>
 		
 			<article>
 				<header>
 					<img src="../img/fireworks.jpg" alt="article image"/>
 					<h3><a href="m.3.2.Earn.html">Earn: Help with the Fireworks Night at Alexandra Palace</a></h3>
-					<h5>Tomorrow | <a href="m.2.1.hub.html">Alexander School</a> | <a href="m.3.1.0.offerings.category.html">Event</a></h5>
+					<h5>Tomorrow | <a href="m.2.1.branch.html">Alexander School</a> | <a href="m.3.1.0.activities.category.html">Event</a></h5>
 				</header>
 				<section>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation.
@@ -166,7 +254,7 @@
 				<header>
 					<img src="../img/platform.jpg" alt="article image"/>
 					<h3><a href="m.3.2.Earn.html">Earn: Help out at the platform</a></h3>
-					<h5>Anyday | <a href="m.2.1.hub.html">Alexander School</a> | <a href="m.3.1.0.offerings.category.html">Volunteering</a></h5>
+					<h5>Anyday | <a href="m.2.1.branch.html">Alexander School</a> | <a href="m.3.1.0.activities.category.html">Volunteering</a></h5>
 				</header>
 				<section>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation.
@@ -178,7 +266,7 @@
 				<header>
 					<img src="../img/fireworks.jpg" alt="article image"/>
 					<h3><a href="m.3.2.Earn.html">Earn: Help with the Fireworks Night at Alexandra Palace</a></h3>
-					<h5>Tomorrow | <a href="m.2.1.hub.html">Alexander School</a> | <a href="m.3.1.0.offerings.category.html">Event</a></h5>
+					<h5>Tomorrow | <a href="m.2.1.branch.html">Alexander School</a> | <a href="m.3.1.0.activities.category.html">Event</a></h5>
 				</header>
 				<section>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation.
@@ -186,14 +274,14 @@
 				</section>
 			</article>
 		
-		<h3 class="more"><a href="#"/>34 more Earn offerings</a></h3>
+		<h3 class="more"><a href="#"/>34 more Earn activities</a></h3>
 						
-		<h2 class="page-heading">Spend Offerings</h2>
+		<h2 class="page-heading">Spend Activities</h2>
 			<article>
 				<header>
 					<img src="../img/football.jpg" alt="article image"/>
 					<h3><a href="m.3.2.1.Spend.html">Spend: Go to see Cardiff City</a></h3>
-					<h5>Today | <a href="m.2.superhub.html">Alexander Palace Time Credits</a> | <a href="m.3.1.0.offerings.category.html">Sport</a></h5>
+					<h5>Today | <a href="m.2.superbranch.html">Alexander Palace Time Credits</a> | <a href="m.3.1.0.activities.category.html">Sport</a></h5>
 				</header>
 				<section>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation.
@@ -205,7 +293,7 @@
 				<header>
 					<img src="../img/football.jpg" alt="article image"/>
 					<h3><a href="m.3.2.1.Spend.html">Spend: Go to see Cardiff City</a></h3>
-					<h5>Today | <a href="m.2.superhub.html">Alexander Palace Time Credits</a> | <a href="m.3.1.0.offerings.category.html">Sport</a></h5>
+					<h5>Today | <a href="m.2.superbranch.html">Alexander Palace Time Credits</a> | <a href="m.3.1.0.activities.category.html">Sport</a></h5>
 				</header>
 				<section>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation.
@@ -217,7 +305,7 @@
 				<header>
 					<img src="../img/football.jpg" alt="article image"/>
 					<h3><a href="m.3.2.1.Spend.html">Spend: Go to see Cardiff City</a></h3>
-					<h5>Today | <a href="m.2.superhub.html">Alexander Palace Time Credits</a> | <a href="m.3.1.0.offerings.category.html">Sport</a></h5>
+					<h5>Today | <a href="m.2.superbranch.html">Alexander Palace Time Credits</a> | <a href="m.3.1.0.activities.category.html">Sport</a></h5>
 				</header>
 				<section>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation.
@@ -225,38 +313,11 @@
 				</section>
 			</article>
 			
-		<h3 class="more"><a href="#"/>12 more Spend offerings</a></h3>				
+		<h3 class="more"><a href="#"/>12 more Spend activities</a></h3>				
 						
 	</div>				
-					
 
-	<div id="after-main">
-
-		<div id="about" class="after-main-col">
-			<h2><a href="#">About Spice &amp; Time Credits</a></h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation. Do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation.
-			</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation. <a href="#">Read more</a>
-			</p>
-		</div>
-
-		<div id="business" class="after-main-col">
-			<h2><a href="#">What's in it for your business</a></h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation. <a href="#">Read more</a>
-			</p>
-			<h3>Businesses supporting us</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Utenim ad minim veniam, quis nostrud exercitation.
-			</p>
-			<ul>
-			<li><a href="#">Nam liber</a></li>
-			<li><a href="#">Nam liber</a></li>
-			<li><a href="#">Nam liber</a></li>
-			<li><a href="#">Nam liber</a></li>
-			</ul>
-
-		</div>
-	</div> <!-- #after-main -->
-
+	
 </div> <!-- #main -->
 
 <div id="footer" class="wrapper">
@@ -265,11 +326,11 @@
 		
 				<ul>
 					<li><a href="1.spice-homepage.html">Home</a></li>
-					<li><a href="3.offerings.html">Offerings</a></li>
-					<li><a href="5.for-business.html">For Business</a></li>
+					<li><a href="3.activities.html">Activities</a></li>
+					<li><a href="5.for-partner.html">For Partner</a></li>
 					<li><a href="6.about-spice-and-time-credits.html">About Spice</a></li>
-					<li><a href="7.all-hubs.html">All Hubs</a></li>
-					<li><a href="8.start-a-hub.html">Start a Hub</a></li>
+					<li><a href="7.all-branchs.html">All Branches</a></li>
+					<li><a href="8.start-a-branch.html">Start a Branch</a></li>
 					<li><a href="11.terms-conditions.html">Terms &amp; Conditions</a></li>
 				</ul>
 		
