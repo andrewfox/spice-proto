@@ -115,7 +115,7 @@ $('.be').hide();
 
 $('#activity').hide();
 
-$('#advanced').hide();
+//$('#advanced').hide();
 
 $('#activity-address').hide();
 

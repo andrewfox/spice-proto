@@ -83,6 +83,11 @@ td { vertical-align: top; }
 	cursor: pointer;
 }
 
+footer {
+	background-color: #F1F1EF;
+	padding: 10px;
+}
+
 
 /*GENERAL*/
 
@@ -462,10 +467,11 @@ li.middle-margin {
 
 
 #left, #right, #middle{
-	width: 31.25%;
+	width: 32.7083333%;
 	padding: 0.729166667%;
 	height: 60px;
 	background-color: silver;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
 
@@ -481,10 +487,15 @@ li.middle-margin {
 }
 
 #middle {
-	margin-right: 0.9375%;
-	margin-left: 0.9375%;
+	width: 34.5833333%;
 	margin-bottom: 10px;
 	float: left;
+	border-left-style: solid;
+	border-left-width: 0.9375%;
+	border-right-style: solid;
+	border-left-color: white;
+	border-right-color: white;
+	border-right-width: 0.9375%;
 }
 
 #map {
@@ -838,7 +849,7 @@ ul.statement-details{
 	margin-right: 15px;
 }
 
-#info-member-branchs {
+#info-member-branches {
 	clear: both;
 	padding-top: 5px;
 }
