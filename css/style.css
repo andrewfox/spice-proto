@@ -449,6 +449,11 @@ h4#short-dec{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+#branchintro h2 {
+	background-color: silver;
+	margin: 0 0 3px 0;
+	padding: 5px 10px;
+}
 
 /*#branchintro ul li {
 	width: 31.25%;
