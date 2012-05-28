@@ -25,6 +25,9 @@
 	<script src="../js/script.js"></script>
 	<!-- Load the Google APIs -->
 	 <script src="http://www.google.com/jsapi"></script>
+	 
+	 
+	 
 	 <script>
 	 // Load the map scripts
 	 google.load('maps', '3', {other_params:'sensor=true'});
@@ -64,15 +67,71 @@
 	 var marker = new google.maps.Marker({
 	 position: user_lat_long,
 	 map: map
+//	 
+//	 var styleMaker1 = new StyledMarker({
+//	 styleIcon:new StyledIcon(StyledIconTypes.MARKER,{color:"00ff00",text:"A"}),position:myLatLng,map:map});
+//	 
+//	 
 	 });
+	 
+	 //	 Markers and infowindows
+	 	 
+	 	 
+	 	 var myLatlng = new google.maps.LatLng(51.517336, -0.082966);
+	 //	 var myOptions = {
+	 //	   zoom: 4,
+	 //	   center: myLatlng,
+	 //	   mapTypeId: google.maps.MapTypeId.ROADMAP
+	 //	 }
+	 //	 
+	 //	 var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+	 	 
+	 	 var contentString = '<div id="content">'+
+	 	     '<div id="siteNotice">'+
+	 	     '</div>'+
+	 	     '<h2 id="firstHeading" class="firstHeading">Uluru</h2>'+
+	 	     '<div id="bodyContent">'+
+	 	     '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+	 	     'sandstone rock formation in the southern part of the '+
+	 	     'Northern Territory, central Australia. It lies 335 km (208 mi) '+
+	 	     'south west of the nearest large town, Alice Springs; 450 km '+
+	 	     '(280 mi) by road. Kata Tjuta and Uluru are the two major '+
+	 	     'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+	 	     'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+	 	     'Aboriginal people of the area. It has many springs, waterholes, '+
+	 	     'rock caves and ancient paintings. Uluru is listed as a World '+
+	 	     'Heritage Site.</p>'+
+	 	     '<p>Attribution: Uluru, <a href="http://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+	 	     'http://en.wikipedia.org/w/index.php?title=Uluru</a> (last visited June 22, 2009).</p>'+
+	 	     '</div>'+
+	 	     '</div>';
+	 	 
+	 	 var infowindow = new google.maps.InfoWindow({
+	 	     content: contentString
+	 	 });
+	 	 
+	 	 var marker2 = new google.maps.Marker({
+	 	     position: myLatlng,
+	 	     map: map,
+	 	     title:"Uluru (Ayers Rock)"
+	 	 });
+	 	 
+	 	 google.maps.event.addListener(marker2, 'click', function() {
+	 	   infowindow.open(map,marker2);
+	 	 });
+	 
 	
 	 // Set the center of the map to the user's position and zomm into a more detailed level
 	 map.setCenter(user_lat_long);
-	 map.setZoom(15);
+	 map.setZoom(13);
 	
 	 }
 	
 	 google.setOnLoadCallback(mapInit);
+	 
+	 
+	 
+	 
 	
 	 </script>
 	 
@@ -148,7 +207,7 @@
 		<h3 class="join boxed">Join us now</h3>
 		<div id="join-form">
 			<p class="join">Take less than 5 minutes to get involved</p>
-			<form class= "join-now" METHOD="LINK" ACTION="4.2.Sign-up-confirm-and-form.html"/>
+			<form class= "join-now" METHOD="LINK" ACTION="4.1.Sign-up-thanks.html"/>
 				<input type="text" onClick="this.value=''" name="Email" value="your email address" />
 				<input type="submit" value="Join" />
 			</form>
@@ -223,7 +282,7 @@
 		<div id="join-us">
 			<h3 class="join boxed">Join us now</h3>
 			<p class="join">Take less than 5 minutes to get involved</p>
-			<form class= "join-now" METHOD="LINK" ACTION="4.2.Sign-up-confirm-and-form.html"/>
+			<form class= "join-now" METHOD="LINK" ACTION="4.1.Sign-up-thanks.html"/>
 				<input type="text" onClick="this.value=''" name="Email" value="your email address" />
 				<input type="submit" value="Join" />
 			</form>
